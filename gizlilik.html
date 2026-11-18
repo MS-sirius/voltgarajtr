@@ -12,19 +12,21 @@
 
 <section id="tr">
 <h1>VoltGarajTR Gizlilik Politikası ve KVKK Aydınlatma Metni</h1>
-<p class="tarih">Yürürlük: 17 Kasım 2026</p>
+<p class="tarih">Yürürlük: 18 Kasım 2026</p>
 
 <h2>1. Veri sorumlusu</h2>
 <p>VoltGarajTR uygulaması bağımsız geliştirici MS-sirius tarafından yayımlanır. İletişim: <a href="mailto:voltgarajtr@gmail.com">voltgarajtr@gmail.com</a></p>
 
 <h2>2. Girişsiz kullanım</h2>
 <p>Katalog, karşılaştırma, hesaplayıcılar ve rehber hesap açmadan çalışır. Bu kullanımda kişisel veri toplanmaz. Giriş yapmadan eklediğiniz favoriler, karşılaştırma listesi, tarifeler, dil ve görünüm ayarları yalnızca cihazınızda saklanır.
-İnternet bağlantısı varsa uygulama güncel araç verisini, tarifeleri, çevirileri ve araç fotoğraflarını indirir (Google Firebase ve Wikimedia Commons). Bu istekler sırasında sunucular teknik olarak IP adresinizi görür; uygulama bunu sizinle ilişkilendirip saklamaz.</p>
+İnternet bağlantısı varsa uygulama güncel araç verisini, tarifeleri, çevirileri ve araç fotoğraflarını indirir (Google Firebase ve Wikimedia Commons). Bu istekler sırasında sunucular teknik olarak IP adresinizi görür; uygulama bunu sizinle ilişkilendirip saklamaz.
+Kaç kişinin uygulamayı kullandığını görmek için her cihaz günde bir kez, kimlik içermeyen günlük bir sayacı bir artırır (yalnızca o günün toplam sayısı tutulur; cihaz ya da kişi bilgisi yazılmaz).</p>
 
 <h2>3. Google ile giriş yaptığınızda işlenen veriler</h2>
 <ul>
 <li><b>Google hesabı bilgileri:</b> ad, e-posta adresi, profil fotoğrafı bağlantısı ve hesap kimliği (Firebase Authentication).</li>
 <li><b>Ülke seçiminiz</b> ile hesabın oluşturulma ve güncellenme zamanı (Cloud Firestore).</li>
+<li><b>Kullanım bilgisi:</b> uygulamayı ilk ve son kullandığınız gün (günde en fazla bir kez güncellenir), uygulama sürümü, uygulama dili ve Android sürümü (Cloud Firestore). Destek, hata ayıklama ve kötüye kullanımı önlemek için tutulur; ne zaman, ne kadar süre ya da hangi ekranları kullandığınız kaydedilmez. Kötüye kullanım halinde geliştirici hesabı devre dışı bırakabilir; bunun için hesap kimliğiniz, tarih ve kısa bir gerekçe saklanır.</li>
 <li><b>Garaj</b> bölümünü kullanırsanız: eklediğiniz araçlar (katalogdaki model ya da yazdığınız marka/model, isteğe bağlı takma ad ve plaka, tescil tarihi, kilometre ve kilometre geçmişi), düzenlediğiniz bakım aralıkları ve bakım kayıtlarınız (tarih, kilometre, yapılan işlemler, isteğe bağlı tutar, servis adı ve not) (Cloud Firestore; hızlı açılış ve çevrimdışı kullanım için ayrıca telefonunuzda, çıkış yapınca silinir).</li>
 <li><b>Tüketim ve tasarruf</b> (Garaj içinde) kullanırsanız: araçlarınız için girdiğiniz şarj kayıtları (tarih, gösterge kilometresi, alınan enerji kWh, şarj yeri ev/AC/DC, isteğe bağlı ücret ve istasyon/not), girdiğiniz elektrik/benzin fiyat dönemleri ve araç başına benzinli kıyas tüketimi (Cloud Firestore; ayrıca telefonunuzda, çıkış yapınca silinir). Tüketim ve tasarruf sonuçları saklanmaz, cihazda hesaplanır.</li>
 <li><b>Favoriler ve listeler</b>: giriş yaptıysanız favorilerinize ve oluşturduğunuz listelere eklediğiniz araçlar ile liste adları (Cloud Firestore; ayrıca telefonunuzda). İlk girişte cihazınızdaki favoriler hesabınıza eklenir; çıkış yapınca listeler telefonunuzdan silinir, yalnızca Favoriler listesinin bir kopyası cihazda kalır.</li>
@@ -57,7 +59,7 @@
 
 <section id="en">
 <h1>VoltGarajTR Privacy Policy</h1>
-<p class="tarih">Effective: 17 November 2026</p>
+<p class="tarih">Effective: 18 November 2026</p>
 
 <h2>1. Controller</h2>
 <p>The VoltGarajTR app is published by independent developer MS-sirius. Contact: <a href="mailto:voltgarajtr@gmail.com">voltgarajtr@gmail.com</a></p>
@@ -70,6 +72,7 @@ When online, the app downloads updated vehicle data, tariffs, translations and v
 <ul>
 <li><b>Google account details:</b> name, e-mail address, profile photo link and account ID (Firebase Authentication).</li>
 <li><b>Your country selection</b> and the account creation/update time (Cloud Firestore).</li>
+<li><b>Usage information:</b> the first and last day you used the app (updated at most once a day), app version, app language and Android version (Cloud Firestore). Kept for support, debugging and abuse prevention; when, how long or which screens you use is not recorded. In case of abuse the developer may disable the account; for this your account ID, the date and a short reason are stored.</li>
 <li>If you use the <b>Garage</b> section: the vehicles you add (catalog model or the make/model you type, optional nickname and licence plate, registration date, mileage and mileage history), any service intervals you edit and your service records (date, mileage, work done, optional amount, workshop name and note) (Cloud Firestore; also kept on your phone for fast start-up and offline use, removed when you sign out).</li>
 <li>If you use <b>Consumption and savings</b> (inside the Garage): the charging records you enter for your vehicles (date, odometer, energy added in kWh, charging place home/AC/DC, optional cost and station/note), the electricity/petrol price periods you enter and the petrol comparison consumption per vehicle (Cloud Firestore; also kept on your phone, removed when you sign out). Consumption and savings results are not stored; they are calculated on the device.</li>
 <li><b>Favorites and lists</b>: if you are signed in, the cars you add to your favorites and to lists you create, and the list names (Cloud Firestore; also kept on your phone). On first sign-in, favorites on your device are added to your account; when you sign out, the lists are removed from your phone and only a copy of your Favorites list stays on the device.</li>
