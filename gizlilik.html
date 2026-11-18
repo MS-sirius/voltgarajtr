@@ -18,8 +18,9 @@
 <p>VoltGarajTR uygulaması bağımsız geliştirici MS-sirius tarafından yayımlanır. İletişim: <a href="mailto:voltgarajtr@gmail.com">voltgarajtr@gmail.com</a></p>
 
 <h2>2. Girişsiz kullanım</h2>
-<p>Katalog, karşılaştırma, hesaplayıcılar ve rehber hesap açmadan çalışır. Bu kullanımda kişisel veri toplanmaz. Giriş yapmadan eklediğiniz favoriler, karşılaştırma listesi, tarifeler, dil ve görünüm ayarları yalnızca cihazınızda saklanır.
-İnternet bağlantısı varsa uygulama güncel araç verisini, tarifeleri, çevirileri ve araç fotoğraflarını indirir (Google Firebase ve Wikimedia Commons). Bu istekler sırasında sunucular teknik olarak IP adresinizi görür; uygulama bunu sizinle ilişkilendirip saklamaz.
+<p>Katalog, karşılaştırma, hesaplayıcılar ve rehber hesap açmadan çalışır. Bu kullanımda ad, e-posta gibi kişisel bilgiler toplanmaz. Giriş yapmadan eklediğiniz favoriler, karşılaştırma listesi, tarifeler, dil ve görünüm ayarları ile kapattığınız duyurular yalnızca cihazınızda saklanır.
+İnternet bağlantısı varsa uygulama güncel araç verisini, tarifeleri, çevirileri, araç fotoğraflarını, uygulama ayarlarını (bakım duyurusu, güncelleme gereksinimi) ve duyuruları indirir (Google Firebase ve Wikimedia Commons). Bu istekler sırasında sunucular teknik olarak IP adresinizi görür; uygulama bunu sizinle ilişkilendirip saklamaz.
+Güncelleme gereksinimi Firebase Remote Config ile denetlenir; bu hizmet uygulamanın bu kurulumu için rastgele bir <b>kurulum kimliği</b> (Firebase Installation ID) oluşturur ve Google sunucularına gönderir. Bu kimlik ad, e-posta ya da reklam kimliği içermez, yalnızca ayarları doğru cihaza iletmek için kullanılır ve uygulamayı kaldırınca geçerliliğini yitirir.
 Kaç kişinin uygulamayı kullandığını görmek için her cihaz günde bir kez, kimlik içermeyen günlük bir sayacı bir artırır (yalnızca o günün toplam sayısı tutulur; cihaz ya da kişi bilgisi yazılmaz).</p>
 
 <h2>3. Google ile giriş yaptığınızda işlenen veriler</h2>
@@ -65,8 +66,9 @@ Kaç kişinin uygulamayı kullandığını görmek için her cihaz günde bir ke
 <p>The VoltGarajTR app is published by independent developer MS-sirius. Contact: <a href="mailto:voltgarajtr@gmail.com">voltgarajtr@gmail.com</a></p>
 
 <h2>2. Using the app without an account</h2>
-<p>The catalog, comparison, calculators and guide work without an account, and no personal data is collected. Favorites added without signing in, comparison list, tariffs, language and appearance settings are stored only on your device.
-When online, the app downloads updated vehicle data, tariffs, translations and vehicle photos (Google Firebase and Wikimedia Commons). Those servers technically see your IP address; the app does not link it to you or store it.</p>
+<p>The catalog, comparison, calculators and guide work without an account, and no personal details such as your name or e-mail are collected. Favorites added without signing in, comparison list, tariffs, language and appearance settings and dismissed announcements are stored only on your device.
+When online, the app downloads updated vehicle data, tariffs, translations, vehicle photos, app settings (maintenance notice, update requirement) and announcements (Google Firebase and Wikimedia Commons). Those servers technically see your IP address; the app does not link it to you or store it.
+Update requirements are checked with Firebase Remote Config, which creates a random <b>installation ID</b> (Firebase Installation ID) for this installation of the app and sends it to Google servers. It contains no name, e-mail or advertising ID, is used only to deliver settings to the right device, and becomes invalid when the app is uninstalled.</p>
 
 <h2>3. Data processed when you sign in with Google</h2>
 <ul>
